@@ -7,4 +7,6 @@ jobs:
     steps:
       - checkout
 
+      - run: sleep 5
+
       - run: python -c "import os,sys; sys.exit(int(os.environ['CIRCLE_BUILD_NUM']) % 2)"
